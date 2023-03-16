@@ -6,15 +6,44 @@
     
 
 }
+#home{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(37,39,30,1) 55%);
+    max-height: 100vh;
+}
+
+
 
 body{
-    background-color:#FBEFF4;
+    background: rgb(255,255,255);
 }
+
+#home video{
+   max-width: 90%;
+ 
+}
+
+
+
+#skills div video{
+    max-width: 100%;
+    z-index:-1;
+    position:absolute;
+    visibility:hidden;
+}
+
+#skills{
+    z-index:1;
+    background: rgb(17,255,152);
+background: linear-gradient(0deg, rgba(17,255,152,0.3701855742296919) 88%, rgba(34,193,195,0.9836309523809523) 97%);}
+
 
 @media (max-width: 768px){
     nav{
         display:none;
     }
+  
+
 }
 
 nav{
@@ -54,7 +83,7 @@ nav ul li a{
     height:100vh;
     width:100%;
 }
-#home div{
+#skills div{
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -65,12 +94,9 @@ nav ul li a{
     border-radius: 50%;
 }
 
-#home div h1{
-    font-family: 'Noto Sans SC', sans-serif;
-    color:#25271E;
-}
 
-#home div h2{
+
+#skills div h2{
     font-family: 'Noto Sans SC', sans-serif;
     background-color:#25271E;
     color:#FBEFF4;
@@ -78,11 +104,13 @@ nav ul li a{
 }
 
 
-#home p{
-    margin-top:20px;
+#skills p{
+    margin-top:40px;
     width:50%;
     font-family: 'Noto Sans SC', sans-serif;
     color:#25271E;
+    font-size:1.2rem;
+    z-index:2;
 }
 
 
@@ -100,7 +128,11 @@ nav ul li a{
     #home div p{
         width:80%;
         font-size:1.5rem;
-    }}
+    }
+    #skills div video{
+        visibility: visible;
+    }
+}
       
     @media (min-width:1023px){
 
@@ -137,16 +169,20 @@ nav ul li a{
 }
 
 #skills h2{
-    margin-top:80px;
+    margin-top:300px;
     font-family: 'Noto Sans SC', sans-serif;
     color:#25271E;
+    /*background-color:#25271E;*/
+    width:50%;
+    text-align: center;
     font-size:2rem;
 }
 
 #skillImg{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
 }
+
 
 #skills img{
     margin-top:50px;
@@ -172,7 +208,10 @@ nav ul li a{
    #skills h2{
        font-size:4rem;
        margin-bottom:20px;
+       padding-top: 150px;
+
     }
+    
 }
       
     @media (min-width:1023px){
@@ -186,7 +225,15 @@ nav ul li a{
         margin-top:20px;
         margin-bottom:40px;    
     }
-              
+      
+    #skills div{
+        flex-direction: row;
+    
+    }
+
+    #skills p{
+        padding-top: 50px;
+    }
 
 }
 
@@ -310,6 +357,7 @@ nav ul li a{
 }
 
 @media (min-width:1023px){
+    
     #projects h2{
         font-size:4rem;
     }
