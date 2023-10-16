@@ -39,6 +39,9 @@ body{
     background: rgb(17,255,152);
 background: linear-gradient(0deg, rgba(17,255,152,0.3701855742296919) 88%, rgba(34,193,195,0.9836309523809523) 97%);}
 
+#VepeT{font-family: 'Noto Sans SC', sans-serif;
+    color:#25} 
+
 
 @media (max-width: 768px){
     nav{
@@ -259,8 +262,7 @@ nav ul li a{
 }
 
 
-#VepeT{font-family: 'Noto Sans SC', sans-serif;
-    color:#25} 
+
 
 #Send{
     margin-left:10px;
