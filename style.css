@@ -12,7 +12,9 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(37,39,30,1) 55%);
     max-height: 100vh;
 }
 
-
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 
 body{
     background: rgb(255,255,255);
